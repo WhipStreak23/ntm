@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="https://mark.trademarkia.com/logo-images/nichifu-terminal-industries-co/ntm-73266434.jpg"/>
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+a {
+    color: white;
+}
+
+#Home {background-color: red;}
+#TobyMac {background-color: green;}
+#Daigle {background-color: purple;}
+#Moen {background-color: orange;}
+</style>
+<title>YouLinks</title>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('TobyMac', this, 'green')">TobyMac</button>
+<button class="tablink" onclick="openPage('Daigle', this, 'purple')">Repairing</button>
+<button class="tablink" onclick="openPage('Moen', this, 'orange')">Don Moen</button>
+
+<div id="Home" class="tabcontent">
+  <h3>YouLinks</h3>
+  <p>Welcome to YouLinks!<br>A place where you get free YouTube links to all of your favorite artists!</p>
+  <h4>Click on the tabs to get started!</h4>
+</div>
+
+<div id="TobyMac" class="tabcontent">
+  <h3>Songs by TobyMac include...</h3>
+  <a href="https://www.youtube.com/watch?v=4wNpOeakhEM" target="_blank">I just need U.</a><br>
+  <a href="https://www.youtube.com/watch?v=ZeBv9r92VQ0" target="_blank">Speak life</a><br>
+  <a href="https://www.youtube.com/watch?v=8qGa5rIOB28" target="_blank">Me without you</a><br>
+  <a href="https://www.youtube.com/watch?v=d17hi1s6Tgg" target="_blank">Lights Shine Bright</a><br>
+  <a href="https://www.youtube.com/watch?v=v9XyAMnSh6g" target="_blank">City on our knees</a><br>
+  <a href="https://www.youtube.com/watch?v=coHKdhAZ9hU" target="_blank">Lose my soul</a><br>
+  <a href="https://www.youtube.com/watch?v=MX1G71WK-FA" target="_blank">Move</a><br>
+  <a href="https://www.youtube.com/watch?v=44l9PRI4c2M" target="_blank">Love broke thru</a><br>
+  <a href="https://www.youtube.com/watch?v=LWLZ_MrPplk" target="_blank">Till the day I die</a><br>
+  <a href="https://www.youtube.com/watch?v=O8xGaE4S2gk" target="_blank">Feel it</a><br>
+  <a href="https://www.youtube.com/watch?v=cFJ5qCmvPkY" target="_blank">Made to love</a><br>
+  <a href="https://www.youtube.com/watch?v=kME_Q5V82Us" target="_blank">Backseat Driver</a><br>
+  <a href="https://www.youtube.com/watch?v=KA_HoEC9ixc" target="_blank">Steal my show</a><br>
+  <a href="https://www.youtube.com/watch?v=MnSXYmn-YvY" target="_blank">Scars</a><br>
+  <a href="https://www.youtube.com/watch?v=iFPq9p559II" target="_blank">Beyond me</a><br>
+</div>
+
+<div id="Daigle" class="tabcontent">
+<h1>Under Construction. <a href="https://www.charismamag.com/life/women/40235-is-lauren-daigle-right-to-push-back-at-the-christian-artist-label">Lauren Daigle removed.</a></h1>
+</div>
+
+<div id="Moen" class="tabcontent">
+  <h3>Songs by Don Moen include...</h3>
+  <a href="https://www.youtube.com/watch?v=RsMAXhc0QTs" target="_blank">God will make a way</a><br>
+  <a href="https://www.youtube.com/watch?v=Jl06RN5zRxk" target="_blank">God is good</a><br>
+  <a href="https://www.youtube.com/watch?v=K44trVhtZX4" target="_blank">Thank you Lord</a><br>
+  <a href="https://www.youtube.com/watch?v=KMTmZKotTYw" target="_blank">Give thanks</a><br>
+  <a href="https://www.youtube.com/watch?v=TcFRbuIbyoE" target="_blank">I offer my life</a><br>
+  <a href="https://www.youtube.com/watch?v=NDb35qrSH1A" target="_blank">Here we are</a><br>
+  <a href="https://www.youtube.com/watch?v=0H2PxM4LmnM" target="_blank">I am the God that healeth thee</a><br>
+  <a href="https://www.youtube.com/watch?v=pSLBqhZzyiU" target="_blank">Our father</a><br>
+  <a href="https://www.youtube.com/watch?v=5OGreASOd4c" target="_blank">I will sing</a><br>
+  <a href="https://www.youtube.com/watch?v=M3kin-9cJVU" target="_blank">Hallelujah to the lamb</a><br>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
